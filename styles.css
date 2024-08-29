@@ -75,7 +75,7 @@ nav ul li a {
 /* Degree Section */
 #degree {
     padding: 50px;
-    background-color: #EAEAEA;
+    background-color: #E8F5E9;
 }
 
 #degree h2 {
@@ -130,10 +130,11 @@ nav ul li a {
 }
 
 .project-item {
-    background-color: #EAEAEA;
+    background-color: #E8F5E9;
     padding: 20px;
     margin: 10px;
     width: 30%;
+    border: 40%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
