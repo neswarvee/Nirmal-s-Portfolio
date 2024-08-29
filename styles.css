@@ -42,7 +42,7 @@ nav ul li a:hover {
 /* Home Section */
 #home {
     height: 100vh;
-    background: url('NHS.png') no-repeat center center/cover;
+    background: url('bg.jpg') no-repeat center center/cover;
     color: #34616A;
     display: flex;
     flex-direction: column; /* Ensure that child elements stack vertically */
