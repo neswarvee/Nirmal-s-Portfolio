@@ -39,23 +39,30 @@ nav ul li a:hover {
     color: #E0F7FA; /* Hover effect */
 }
 
-/* Home Section */
 #home {
     height: 100vh;
-    background: url('bg.jpg') no-repeat center center/cover;
-    color: #34616A;
+    background: url('path-to-your-background-image.jpg') no-repeat center center/cover;
+    color: white;
     display: flex;
-    flex-direction: column; /* Ensure that child elements stack vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px; /* Add padding to prevent content from touching edges */
+    padding: 20px;
 }
 
-.intro {
-    margin-bottom: 50px; /* Space between intro and slider */
+.intro h1 {
+    font-size: 4em;
+    color: #E0F7FA;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5em;
 }
 
+.intro p {
+    font-size: 1.5em;
+    color: #E0F7FA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 #slider {
     width: 100%;
     max-width: 1200px;
