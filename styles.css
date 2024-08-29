@@ -41,7 +41,7 @@ nav ul li a:hover {
 
 #home {
     height: 100vh;
-    color: #E0F7FA;
+    background-color: #E0F7FA;
     display: flex;
     flex-direction: column;
     justify-content: center;
