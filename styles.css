@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #34616A;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #004b87;
+    background-color: #668B9F;
     color: white;
     padding: 10px 20px;
 }
@@ -71,6 +71,43 @@ nav ul li a {
     line-height: 1.6;
 }
 
+/* Degree Section */
+#degree {
+    padding: 50px;
+    background-color: #eaeaea;
+}
+
+#degree h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.degree-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.degree-content h3 {
+    color: #004b87;
+    margin-bottom: 10px;
+}
+
+.degree-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.degree-content a {
+    color: #004b87;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.degree-content a:hover {
+    text-decoration: underline;
+}
 /* Projects Section */
 #projects {
     padding: 50px;
