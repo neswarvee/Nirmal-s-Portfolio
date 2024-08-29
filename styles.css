@@ -41,8 +41,7 @@ nav ul li a:hover {
 
 #home {
     height: 100vh;
-    background: url('bg.jpg') no-repeat center center/cover;
-    color: white;
+    color: #E0F7FA;
     display: flex;
     flex-direction: column;
     justify-content: center;
