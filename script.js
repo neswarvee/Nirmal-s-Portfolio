@@ -9,22 +9,9 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
-// Adding a little interactive hover effect to the navigation
+// Adding hover effect to navigation
 document.querySelectorAll('nav ul li a').forEach(link => {
     link.addEventListener('mouseenter', function() {
-        this.style.color = '#668B9F'; // Change to secondary color on hover
+        this.style.color = '#E0F7FA'; // Change to lighter color on hover
     });
-    link.addEventListener('mouseleave', function() {
-        this.style.color = '#FFFFFF'; // Revert to white
-    });
-});
-
-// Adding a hover effect to project links
-document.querySelectorAll('.project-item a').forEach(link => {
-    link.addEventListener('mouseenter', function() {
-        this.style.color = '#34616A'; // Change to primary color on hover
-    });
-    link.addEventListener('mouseleave', function() {
-        this.style.color = '#668B9F'; // Revert to secondary color
-    });
-});
+   
