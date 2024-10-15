@@ -397,53 +397,33 @@ nav ul li a:hover {
     margin: 0;
 }
 
-/* Contact Section */
+/* contact */
+
 #contact {
-    padding: 60px 20px;
-    background-color: #E0F7FA; /* Light blue */
-    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
 }
 
-#contact h2 {
-    font-size: 2.5em;
-    color: #34616A; /* Primary color */
-    margin-bottom: 30px;
+.contact-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
 }
 
-#contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+.contact-list li {
+    margin: 10px 0; /* Space between list items */
 }
 
-#contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    color: #34616A; /* Primary color */
+.contact-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #0073e6; /* Link color */
+    font-size: 1.1em; /* Slightly larger text */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #668B9F; /* Secondary color */
-    border-radius: 5px;
-}
-
-#contact-form button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    background-color: #34616A; /* Primary color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#contact-form button:hover {
-    background-color: #668B9F; /* Hover effect */
+.contact-link:hover {
+    color: #005bb5; /* Darker color on hover */
 }
 
 /* Footer */
