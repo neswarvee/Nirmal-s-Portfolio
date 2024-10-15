@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHS PowerApps Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>NHS PowerApps Application</h1>
+        <a href="index.html">Back to Projects</a>
+    </header>
+
+    <section id="project-details">
+        <h2>Project Overview</h2>
+        <p>This project involved developing an intuitive PowerApps application for consultants at the Clatterbridge Cancer Trust.</p>
+        <h3>Features:</h3>
+        <ul>
+            <li>Apps gallery with icons, names, and descriptions</li>
+            <li>Favourite, request access, and run action buttons</li>
+            <li>Search bar for quick app access</li>
+            <li>Personalized request access functionality with confirmation pop-ups</li>
+        </ul>
+        <h3>Technologies Used:</h3>
+        <ul>
+            <li>Microsoft PowerApps</li>
+            <li>Power Automate</li>
+        </ul>
+        <a href="https://github.com/username/nhs-powerapps" target="_blank">View on GitHub</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nirmal Eswar Vee</p>
+    </footer>
+</body>
+
+</html>
