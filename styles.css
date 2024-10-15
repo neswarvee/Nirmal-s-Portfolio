@@ -6,6 +6,101 @@ body {
     background-color: #34616A;
     color: #333;
 }
+/* projects stuff*/
+header {
+    background-color: #34616A;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+nav h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    color: #E0F7FA;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #668B9F;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #E0F7FA;
+    color: #34616A;
+}
+
+/* index.html */
+/* Project Overview Section */
+#project-overview {
+    background-color: #E0F7FA;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#project-overview .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#project-overview h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #34616A;
+}
+
+#project-overview p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* Project Details Section */
+#project-details {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#project-details .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#project-details h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #34616A;
+}
+
+#project-details ul {
+    list-style-type: disc;
+    margin: 20px auto;
+    padding-left: 40px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.github-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #34616A;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #668B9F;
+}
 
 nav {
     display: flex;
@@ -62,16 +157,11 @@ nav ul li a:hover {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-#slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 20px;
-}
 
+/*
 .slides {
     display: flex;
-    animation: slide 12s infinite; /* Adjust the duration here (12s for slower sliding) */
+    animation: slide 12s infinite; 
 }
 
 .slides img {
@@ -79,11 +169,61 @@ nav ul li a:hover {
     display: block;
 }
 
-@keyframes slide {
+#slider {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+    @keyframes slide {
     0% { transform: translateX(0%); }
     50% { transform: translateX(-100%); }
     100% { transform: translateX(0%); }
 }
+*/
+#slider {
+    position: relative;
+    width: 80%; /* Adjust the width here */
+    max-width: 800px; /* Set a maximum width */
+    overflow: hidden; /* This will hide any overflowing images */
+    margin: 20px auto; /* Center the slider */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for slide changes */
+    width: 100%; /* Make sure the width is 100% */
+}
+
+.slides img {
+    width: 100%; /* Each image takes up 100% of the slider */
+    display: block; /* Ensure images are block elements */
+    flex-shrink: 0;
+}
+
+/* Controls styling */
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
 
 /* About Section */
 #about {
