@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naive POS Tagger Project</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Naive POS Tagger Project</h1>
+            <a href="index.html" class="back-button">Back to Projects</a>
+        </nav>
+    </header>
+
+<section id="project-overview">
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>This project implements a naive part-of-speech (POS) tagger using Python, which assigns POS tags to words based on training data frequencies. The tagger also uses heuristics to handle unknown words, improving accuracy when evaluated on a test dataset.</p>
+    </div>
+</section>
+
+<section id="project-details">
+    <div class="container">
+        <h2>Project Details</h2>
+        <ul>
+            <li><strong>Objective:</strong> To build a simple POS tagger and evaluate its accuracy by comparing tagged words against a gold-standard test dataset.</li>
+            <li><strong>Training Data:</strong> Processes training data to build a lexicon that maps each word to its most frequent POS tag.</li>
+            <li><strong>Tagging Approach:</strong> Uses the most common tag per word for known words and assigns the overall most common tag to unknown words.</li>
+            <li><strong>Heuristics for Unknown Words:</strong>
+                <ul>
+                    <li>Tags numbers as <code>CD</code> (cardinal numbers).</li>
+                    <li>Tags capitalized words as <code>NNP</code> (proper nouns).</li>
+                    <li>Uses suffix cues (e.g., <code>-ing</code>, <code>-ly</code>) to assign likely POS tags for words ending in specific patterns.</li>
+                </ul>
+            </li>
+            <li><strong>Evaluation:</strong> Calculates accuracy by comparing predicted POS tags with the actual tags in the test data, providing insight into the tagger's effectiveness.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Nirmal Eswar Vee | Computer Science & AI Engineer</p>
+</footer>
+
+</body>
+</html>
