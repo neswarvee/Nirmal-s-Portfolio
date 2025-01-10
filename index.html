@@ -1,194 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirmal Eswar Vee - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="description" content="Nirmal Eswar Vee - Software and AI Engineer Portfolio">
+    <title>Nirmal Eswar Vee - Software & AI Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body class="bg-gray-100">
     <!-- Navigation -->
-    <nav>
-        <div class="logo">Nirmal Eswar Vee</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#degree">Degree</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-gray-800">Nirmal Eswar Vee</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600">Experience</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
+                    <a href="#certifications" class="text-gray-600 hover:text-blue-600">Certifications</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
-<!-- Home Section -->
-<section id="home">
-    <div class="intro">
-        <h1>My Portfolio</h1>
-        <p>Software and AI Engineer</p>
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-12 bg-gradient-to-r from-blue-500 to-blue-700">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                Software & AI Engineer
+            </h1>
+            <p class="text-xl text-white mb-8">
+                Specializing in Healthcare Analytics & Machine Learning
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100">
+                    Get in Touch
+                </a>
+                <a href="#projects" class="border-2 border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600">
+                    View Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-gray-600 mb-6">
+                    Currently pursuing a BSc in Computer Science with Artificial Intelligence at the University of Sheffield, 
+                    while working part-time as a Software and Data Engineer at Clatterbridge Cancer Trust. I specialise in 
+                    healthcare analytics, machine learning, and software development.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="font-bold mb-4">Languages</h3>
+                        <p class="text-gray-600">Python, Java, C#, JavaScript</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="font-bold mb-4">Technologies</h3>
+                        <p class="text-gray-600">Power BI, PowerApps, PyTorch, SQL</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="font-bold mb-4">Focus Areas</h3>
+                        <p class="text-gray-600">Machine Learning, Healthcare Analytics, Data Science</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Experience Section -->
+<section id="experience" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Experience</h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+            <!-- Current Role -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-2">Software and Data Engineer</h3>
+                <p class="text-gray-600 mb-4">Clatterbridge Cancer Trust | Dec 2024 - Present</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Developed interactive Power BI dashboards for patient acuity monitoring</li>
+                    <li>Built PowerApps portal for streamlining consultant workflows</li>
+                    <li>Contributed to ML model development for predicting patient attendance</li>
+                </ul>
+            </div>
+
+            <!-- Aassaan eduCare Internship -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-2">Software Engineering Intern</h3>
+                <p class="text-gray-600 mb-4">Aassaan eduCare, Chennai | September 2024</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Gained hands-on experience in educational technology at a leading accreditation-focused startup</li>
+                    <li>Shadowed senior engineers developing innovative solutions for university accreditation processes</li>
+                    <li>Gained valuable insights into startup culture and global software engineering practices</li>
+                </ul>
+            </div>
+
+            <!-- Clatterbridge Internship -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-2">Software Developer Intern</h3>
+                <p class="text-gray-600 mb-4">Clatterbridge Cancer Centre | August - September 2024</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Developed a centralized PowerApps portal for consultant doctors to streamline application access</li>
+                    <li>Presented technical solutions at change advisory board meetings to senior stakeholders</li>
+                    <li>Collaborated on predictive modeling for patient attendance using machine learning techniques</li>
+                </ul>
+            </div>
+
+            <!-- Conference -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-2">AI and Law Conference Attendee</h3>
+                <p class="text-gray-600 mb-4">University of Cape Town | June 2024</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Participated in a three-day conference exploring the intersection of AI and law with international legal professionals</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
-    
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            My interest in software's ability to tackle real-world problems led me to technology. After exploring with different programming languages and frameworks, I decided to study computer science with an artificial intelligence focus at Sheffield University.
-    </p>
-    <p>
-        Academic assignments and internships fuelled my interest in software development and AI. I liked designing machine learning models and software that analyses data and provides actionable insights. This hands-on experience has solidified my opinion that software development and AI are essential for innovative and efficient solutions.
-    </p>
-    <p>
-        I like building scalable software systems, optimising methods, and using AI to solve complex problems. I feel mastering these topics is crucial to making an impact in tech. I love supporting technology via continual learning and professional development.
-    </p>
-    <p>
-        I pride myself on my relentless pursuit of innovation, love for solving difficult challenges, and dedication to creating powerful, user-friendly solutions.
-    </p>
-    </section>
 
-     <!-- Degree Section -->
-     <section id="degree">
-        <h2>My Degree</h2>
-        <div class="degree-content">
-            <h3>BSc Computer Science with Artificial Intelligence</h3>
-            <p><strong>University of Sheffield</strong> | September 2022 - June 2025</p>
-            <p>I am currently pursuing a Bachelor of Science degree in Computer Science with Artificial Intelligence at the University of Sheffield, on track to achieve a 2:1. The program provides a strong foundation in both theoretical and practical aspects of computer science, focusing on AI techniques and technologies.</p>
-            <ul>
-                <li><strong>Relevant Modules:</strong>
-                    <ul>
-                        <li>AI Group Project</li>
-                        <li>Systems Design and Security</li>
-                        <li>Dissertation Project</li>
-                        <li>Engineering You're Hired</li>
-                        <li>Text Processing</li>
-                        <li>Reinforcement Learning</li>
-                        <li>Computer Vision</li>
-                    </ul>
-                </li>
-                <li><strong>Extracurricular Activities:</strong>
-                    <ul>
-                        <li>Member of the Sheffield Skate Society</li>
-                        <li>5-a-side player in the CompSci Society</li>
-                    </ul>
-                </li>
-            </ul>    
-            <a href="https://www.sheffield.ac.uk/undergraduate/courses/2025/computer-science-artificial-intelligence-bsc" target="_blank">Learn more about the program</a>
+   <!-- Projects Section -->
+<section id="projects" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- RNN Research Project -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-4">RNN Memory Research (Dissertation)</h3>
+                <p class="text-gray-600 mb-4">
+                    Conducted novel research on sequence memorization in RNNs, achieving perfect reconstruction 
+                    up to length 40 through optimized architectures. Investigated the practical limits of memory capacity
+                    in standard RNNs without complex gating mechanisms.
+                </p>
+                <div class="flex space-x-4 mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">PyTorch</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Deep Learning</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Research</span>
+                </div>
+            </div>
+ 
+            <!-- NHS PowerApps Project -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-4">NHS PowerApps Application</h3>
+                <p class="text-gray-600 mb-4">
+                    Developed an intuitive PowerApps portal for consultants at Clatterbridge Cancer Trust, 
+                    enabling centralized access management and improved workflow efficiency.
+                </p>
+                <div class="flex space-x-4 mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">PowerApps</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Healthcare</span>
+                </div>
+            </div>
+ 
+            <!-- IBM AI Group Project -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-4">IBM AI Group Project: Paradroid Game</h3>
+                <p class="text-gray-600 mb-4">
+                    Led AI implementation in an educational game teaching AI concepts through interactive gameplay.
+                    Collaborated with a team to develop engaging learning experiences.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Unity</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">C#</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">AI Education</span>
+                </div>
+                <a href="https://github.com/neswarvee/paradroid_project" 
+                   target="_blank"
+                   class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                    <i class="fab fa-github mr-2"></i>View on GitHub
+                </a>
+            </div>
+ 
+            <!-- Trains of Sheffield -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-4">Trains of Sheffield E-Commerce</h3>
+                <p class="text-gray-600 mb-4">
+                    Built a full-featured e-commerce platform for model railway products with secure payment 
+                    processing and order management capabilities.
+                </p>
+                <div class="flex space-x-4 mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Java</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">SQL</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">E-Commerce</span>
+                </div>
+                <a href="https://github.com/neswarvee/TrainsOfSheffield/tree/main" 
+                   target="_blank"
+                   class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                    <i class="fab fa-github mr-2"></i>View on GitHub
+                </a>
+            </div>
+ 
+            <!-- Global Engineering Challenge -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-4">Global Engineering Challenge</h3>
+                <p class="text-gray-600 mb-4">
+                    Led a team project developing renewable energy solutions for Malta's energy crisis,
+                    focusing on sustainable and practical implementations.
+                </p>
+                <div class="flex space-x-4 mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Sustainability</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Team Leadership</span>
+                </div>
+            </div>
+ 
+            <!-- POS Tagger -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-4">Naive POS Tagger</h3>
+                <p class="text-gray-600 mb-4">
+                    Implemented a part-of-speech tagger using frequency-based analysis and heuristic approaches
+                    for unknown word handling. Evaluated against gold-standard datasets.
+                </p>
+                <div class="flex space-x-4 mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Python</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">NLP</span>
+                </div>
+                <a href="https://github.com/neswarvee/naive-pos-tagger" 
+                   target="_blank"
+                   class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                    <i class="fab fa-github mr-2"></i>View on GitHub
+                </a>
+            </div>
+ 
+            <!-- Portfolio Website -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-4">Portfolio Website</h3>
+                <p class="text-gray-600 mb-4">
+                    Designed and developed a responsive portfolio website using modern web technologies
+                    and best practices for showcasing projects and skills.
+                </p>
+                <div class="flex space-x-4 mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">HTML</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">CSS</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">JavaScript</span>
+                </div>
+                <a href="https://github.com/neswarvee/neswarvee.github.io/tree/main" 
+                   target="_blank"
+                   class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                    <i class="fab fa-github mr-2"></i>View on GitHub
+                </a>
+            </div>
+            <!-- PowerBI Dashboards -->
+            <div class="bg-gray-50 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <h3 class="text-xl font-bold mb-4">Healthcare Analytics Dashboards</h3>
+                <p class="text-gray-600 mb-4">
+                    Developed comprehensive business intelligence operational reports at Clatterbridge Cancer Trust using patient data. 
+                    Created automated data pipelines that transform raw healthcare data into actionable insights through interactive 
+                    dashboards. Implemented secure data handling practices and automated refresh schedules.
+                </p>
+                
+                <ul class="text-gray-600 list-disc list-inside mb-4">
+                    <li>Automated data refresh pipelines using Power Automate and SQL stored procedures</li>
+                    <li>Created interactive dashboards for patient acuity monitoring</li>
+                    <li>Designed user-friendly interfaces for clinical staff</li>
+                </ul>
+                <div class="flex flex-wrap gap-4 mb-4">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Power BI</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">SQL</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Power Automate</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">DAX</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Healthcare Analytics</span>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Certifications & Training</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Microsoft Power Platform</h3>
+                    <p class="text-gray-600">Currently pursuing PL-300 certification</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">IBM Professional Certifications</h3>
+                    <p class="text-gray-600">Enterprise AI, Data Science, Cloud Computing</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Selected Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3><a href="nhs-powerapps.html" target="_blank">NHS PowerApps Application</a></h3>
-                <p>Developed an intuitive PowerApps application for consultants at the Clatterbridge Cancer Trust to use, allowing them to manage their apps.</p>
-            </div>
-
-            <div class="project-item">
-                <h3><a href="dissertation.html" target="_blank">Dissertation</a></h3>
-                <p>Investigating memorization in recurrent neural networks (RNNs) to demonstrate that memorization is not capped due to numerical instability.</p>
-            </div>
-            <div class="project-item">
-                <h3><a href="game.html" target="_blank">IBM AI Group Project: Paradroid Game</a></h3>
-                <p>Collaborated effectively with a dynamic team to develop a tool for IBM which taught their users about AI..</p>
-                <a href="https://github.com/neswarvee/paradroid_project" target="_blank">View on GitHub</a> 
-            </div>
-            
-            <div class="project-item">
-                <h3><a href="trains.html" target="_blank">Trains of Sheffield</a></h3>
-                <p>Developed an online store for Trains of Sheffield (uni project),
-                    allowing customers to browse model railway prod-
-                    ucts, create orders, and manage banking details</p>
-                    <a href="https://github.com/neswarvee/TrainsOfSheffield/tree/main" target="_blank">View on GitHub</a>    
-            </div>
-           
-            <div class="project-item">
-                <h3><a href="gec.html" target="_blank">Global Engineering Challenge</a></h3>
-                <p>Worked in a team to develop a solution for solving the
-                    energy crisis in Malta with renewable energy sources</p>
-            </div>
-            
-            <div class="project-item">
-                <h3><a href="postag.html" target="_blank">Naive POS Tagger</a></h3>
-                <p>Developed a naive part-of-speech (POS) tagger using Python, which assigns tags to words based on training data frequencies and uses heuristics for unknown words to improve accuracy. Evaluated performance by comparing tags against a gold-standard test set.</p>
-                <a href="https://github.com/neswarvee/naive-pos-tagger" target="_blank">View on GitHub</a>
-            </div>
-
-            <div class="project-item">
-                <h3>Personal Portfolio Website</h3>
-                <p>Created this responsive portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills.</p>
-                <a href="https://github.com/neswarvee/neswarvee.github.io/tree/main" target="_blank">View on GitHub</a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">Get in Touch</h2>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:nirmaleswarvee@gmail.com" class="text-white hover:text-gray-200">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nirmal-eswar-vee-546556279/" class="text-white hover:text-gray-200">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://github.com/neswarvee" class="text-white hover:text-gray-200">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-list">
-            <div class="experience-item">
-                <h3>September 2024: Intern at Aassaan eduCare</h3>
-                <p><strong>Chennai, Tamil Nadu</strong></p>
-                <ul>
-                    <li>Spent time interning at Aassaan edu care in Chennai, India.</li>
-                    <li>Shadowed software engineers who were working on their latest product that would help proffessors in universities, by facilitating accreditation processes.</li>-</li>
-                    <li>Gave me insight on startup companies and how software engineering practices can differ around the world</li>
-                </ul>
-            </div>
-            <br>
-            <div class="experience-item">
-                <h3>August 2024 - September 2024: Software developer intern</h3>
-                <p><strong>Clatterbridge Cancer Centre Business Intelligence department </strong></p>
-                <ul>
-                    <li>Developed an app using Microsoft PowerApps for consultant doctors at the trust to use. The app was a central application hub which contained all the revelant apps the user would need to access.</li>
-                    <li>Demonstrated my app in a change advisory board meeting with the Business Intelligence department staff</li>
-                    <li>Collaborated with developers on a data science project to create a model that would predict if a patient would attend their appointment or not.</li>
-                </ul>
-            </div>
-            <br>
-            <div class="experience-item">
-                <h3>June 2024: AI and Law Conference</h3>
-                <p><strong>University of Cape Town</strong></p>
-                <ul>
-                    <li>Attended a three-day conference focused on the effects of AI on the law, featuring law professionals from around the world.</li>
-                </ul>
-            </div>
-            
-
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Nirmal Eswar Vee | All rights reserved</p>
         </div>
-    </section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out through the following platforms:</p>
-    <ul class="contact-list">
-        <li>
-            <a href="mailto:nirmaleswarvee@gmail.com" class="contact-link">
-                <i class="fas fa-envelope"></i>Email</a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/nirmal-eswar-vee-546556279/" class="contact-link" target="_blank">
-                <i class="fab fa-linkedin"></i>LinkedIn</a>
-        </li>
-        <li>
-            <a href="https://github.com/neswarvee" class="contact-link" target="_blank">
-                <i class="fab fa-github"></i>GitHub</a>
-        </li>
-    </ul>
-</section>
-
-
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Nirmal Eswar Vee | Computer Science & AI Engineer</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
